@@ -1,0 +1,316 @@
+<html>
+    <head>
+        <title>
+            Teacher Activity
+        </title>
+    </head>
+    
+<body>
+    <p>
+        How to declare the arrays ? 
+        <h4 id="declare"> </h4>
+        <script> var fruits = ["Mango", "Apple", "Banana", "Watermelon", "Orange"];
+        document.getElementById("declare").innerHTML=fruits;
+        </script> 
+        </p>  
+<hr>
+    <p>
+        How to fetch the first element of the array ?
+        <h4 id="first_element"> </h4>
+        <script>
+            var first_element = fruits[0];
+            document.getElementById("first_element").innerHTML=first_element;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to fetch the second element of the array ?
+        <h4 id="sec_element"> 
+        </h4>
+        <script>
+            var second_element = fruits[1];
+            document.getElementById("sec_element").innerHTML=second_element;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to fetch the third element of the array ?
+        <h4 id="third_element"> 
+        </h4>
+        <script>
+            var third_element = fruits[2];
+            document.getElementById("third_element").innerHTML=third_element;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to get the length of the array ?
+        <h4 id="arrayLen"> </h4>
+        <script>
+            var length = fruits.length;
+            document.getElementById("arrayLen").innerHTML=length;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to loop the array array ?
+        <h4 id="Loop"> </h4>
+        <script>
+            var array_value = "";
+            for(var i = 0; i < fruits.length; i++){
+                array_value = array_value + fruits[i] + "<br>";
+            }
+            document.getElementById("Loop").innerHTML=array_value;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to add element at the end of the array ?
+        <h4 id="append"> 
+        </h4>
+        <script>
+            fruits.push("Melon");
+            document.getElementById("append").innerHTML=fruits;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to add more element at the end of the array ?
+        <h4 id="appendMore"> 
+        </h4>
+        <script>
+            fruits.push("Papaya","Kiwi");
+            document.getElementById("appendMore").innerHTML=fruits;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to declare the arrays with alphabets ? 
+        <h4 id="displayAlphabets"> 
+        </h4>
+        <script>
+            var alphabets = ["b", "a", "z", "t", "f", "e", "k", "o", "m"];
+            document.getElementById("displayAlphabets").innerHTML=alphabets;
+            
+        </script>
+    </p>
+<hr>
+    <p>
+        How to sort the arrays with alphabets ? 
+        <h4 id="sortedAlphabets"> 
+        </h4>
+        <script>
+            alphabets.sort();
+            document.getElementById("sortedAlphabets").innerHTML=alphabets;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to reverse the arrays with alphabets ? 
+        <h4 id="reverseArray"> 
+        </h4>
+        <script>
+            alphabets.reverse();
+            document.getElementById("reverseArray").innerHTML=alphabets;
+        </script>
+    </p>
+<hr>      
+    <p>
+        How to declare the arrays with numbers ? 
+        <h4 id="arrayNum"> 
+        </h4>
+        <script>
+            var num = [45, 76, 43, 23, 98, 24, 66, 47, 123, 42];
+            document.getElementById("arrayNum").innerHTML=num;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to find the maximum number from the arrays ? 
+        <h4 id="maxNum"> 
+        </h4>
+        <script>
+            var max_num = Math.max.apply(Math, num);
+            document.getElementById("maxNum").innerHTML=max_num;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to find the minimum number from the arrays ? 
+        <h4 id="minNum"> 
+        </h4>
+        <script>
+            var min_num = Math.min.apply(Math, num);
+            document.getElementById("minNum").innerHTML=min_num;
+        </script>
+    </p>
+
+    <h3 style="background-color: red; font-size: 23px;">
+        ADDITIONAL ACTIVITY
+    </h3>
+    <p>
+        How to add element at the start of the array ?
+        <h4 id="insert"> 
+        </h4>
+        <script>
+            fruits.unshift("Carrot");
+            document.getElementById("insert").innerHTML=fruits;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to add more element at the start of the array ?
+        <h4 id="insertMore"> 
+        </h4>
+        <script>
+            fruits.unshift("Beans", "Tomato", "Onion");
+            document.getElementById("insertMore").innerHTML=fruits;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to remove element from the start of the array ?
+        <h4 id="shiftOut"> 
+        </h4>
+        <script>
+            fruits.shift();
+            document.getElementById("shiftOut").innerHTML=fruits;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to remove element from the end of the array ?
+        <h4 id="popOut"> 
+        </h4>
+        <script>
+            fruits.pop();
+            document.getElementById("popOut").innerHTML=fruits;
+        </script>
+    </p>
+<hr>
+    <p>
+        How to merge two arrays ?
+        <h4 id="merge_two_arrays"> 
+        </h4>
+        <script>
+            var final_array = fruits.concat(alphabets);
+            document.getElementById("merge_two_arrays").innerHTML=final_array; 
+        </script>
+    </p>
+
+<hr>
+    <p>
+        How to merge two arrays (Method 1) ?
+        <h4 id="merge_two_arrays_1"> 
+        </h4>
+        <script>
+            var country1 = ["Albania", "Afghanistan", "Turkmenistan"];
+            var country2 = ["Uzbekistan", "India", "Pakistan"];
+            var country_array = country1.concat(country2);
+            document.getElementById("merge_two_arrays_1").innerHTML=country_array; 
+        </script>
+    </p>
+
+    <hr>
+    <p>
+        How to merge two arrays (Method 2) ?
+        <h4 id="merge_two_arrays_2"> 
+        </h4>
+        <script>
+            var country_array_1 = country2.concat(country1);
+            document.getElementById("merge_two_arrays_2").innerHTML=country_array_1; 
+        </script>
+    </p>
+</body>
+
+<script>
+
+    //How to declare the arrays ? the id to be refer for innerHTML is declare
+
+  //How to fetch the first element of the array ? the id to be refer for innerHTML is first_element
+   
+
+//How to fetch the second element of the array ? the id to be refer for innerHTML is sec_element
+
+
+
+//How to get the length of the array ? the id to be refer for innerHTML is arrayLen
+
+
+
+ //How to loop the array ? the id to be refer for innerHTML is Loop
+
+
+
+
+ //adding element at the end of the array using push method
+    //How to add element at the end of the array ? the id to be refer for innerHTML is append
+
+
+
+//How to more elements at the end of the array ? the id to be refer for innerHTML is appendMore
+
+
+
+
+ //How to declare array with alphabets ? the id to be refer for innerHTML is displayAlphabets
+
+
+
+
+ //How to sort array with alphabets ? the id to be refer for innerHTML is sortedAlphabets
+
+
+
+
+//How to reverse the array ? the id to be refer for innerHTML is reverseArray
+
+
+
+
+  //How to declare array with numbers ? the id to be refer for innerHTML is arrayNum
+
+
+
+ //How to find the maximum number from the array with numbers ? the id to be refer for innerHTML is maxNum
+
+
+
+//How to find the minimum number from the array with numbers ? the id to be refer for innerHTML is minNum
+
+
+
+//adding element at the starting of the array using unshift method
+    //How to add element at the start of the array ? the id to be refer for innerHTML is insert
+
+
+
+//How to more elements at the start of the array ? the id to be refer for innerHTML is insertMore
+
+
+
+
+//How to remove elements from the start of the array ? the id to be refer for innerHTML is shiftOut
+
+
+
+ //How to remove elements from the end of the array ? the id to be refer for innerHTML is popOut
+
+
+
+
+ //How declare array with first world country ?
+
+
+
+
+//How declare array with second world country ?
+
+
+
+
+//How to merge two arrays ? the id to be refer for innerHTML is merge_two_arrays
+
+
+
+
